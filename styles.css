@@ -1,0 +1,476 @@
+/* common */
+/* 最上部のheader */
+
+
+.cover{
+  background:url("img/header_3.jpg");
+  background-size:cover;
+  /* background-size:cover; */
+  height: 300px;
+  position: relative;
+  /* margin-top: px; */
+  /* d-md-none */
+}
+
+
+
+.img_resize{
+  /* background-color: gray; */
+  /* border: solid red; */
+  /* width:100%; */
+  /* height:auto; */
+  width:300px;
+  height:200px;
+  /* max-width:600px; */
+  /* max-height:400px; */
+  object-fit:cover;
+  border-radius:50%;
+  padding:4px;
+  border-width:4px;
+  border-style: solid; border-width: 0.5px;
+  border-color:gray;
+  border-radius: 10px;
+
+}
+a:hover {
+  opacity:1;
+}
+.sample2 {
+  width:300px;
+  height:200px;
+	/* overflow:		hidden; */
+	/* margin:			10px 8px 10px 16px; */
+  margin:auto;
+	position:		relative;
+  text-align:center
+}
+
+
+.sample2 .mask {
+	width:			100%;
+	height:			100%;
+	position:		absolute;
+	top:			0;
+	left:			0;
+	opacity:		0;	/* マスクを表示しない */
+	background-color:	rgba(0,0,0,0.4);
+	-webkit-transition:	all 0.6s ease;
+	transition:		all 0.6s ease;
+}
+
+.sample2 .caption {
+  font-size:		130%;
+  text-align: 		center;
+  color:			#fff;
+}
+
+.sample2:hover .mask {
+	opacity:		1;	/* マスクを表示する */
+	padding-top:		80px;	/* ホバーで下にずらす */
+}
+
+.box{
+
+}
+.header_1{
+  display:none;
+/* justify-content: center; */
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.content{
+  margin: 0 auto;
+  padding: 40px;
+}
+.modal{
+  display: none;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.modal__bg{
+  background: rgba(0,0,0,0.8);
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+}
+.modal__content{
+  background: #fff;
+  left: 50%;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 60%;
+}
+.cover_3{
+  background:url("img/header.jpg");
+  background-size:cover;
+  height: 400px;
+}
+.cover_2{
+  width: 100%;
+  height: 0;
+  padding-top: calc(300 / 1000 * 100%); /* calc(画像高さ ÷ 画像横幅 × 100%) */
+  background:url("img/header.jpg") center center / cover no-repeat;
+  /* margin-top: px; */
+  /* d-md-none */
+}
+.bottom-text {
+position: absolute;
+bottom: 0;
+}
+.right-text {
+position: absolute;
+right: 0;
+
+}
+a.nav-link {
+position: relative;
+display: inline-block;
+text-decoration: none;
+
+/* color: rgb(255, 113, 113); */
+}
+
+a.nav-link:hover{
+  /* あらかじめ設定しているパラメータはimportantをつけないと色が変わらない */
+  color: rgb(255, 133, 133) !important;
+  /* background-color: gold; */
+
+}
+
+a.nav-link::after {
+position: absolute;
+bottom: -4px;
+left: 0;
+content: '';
+width: 100%;
+height: 2px;
+background: #333;
+transform: scale(0, 1);
+transform-origin: center top;
+transition: transform .3s;
+}
+
+a.nav-link:hover::after {
+transform: scale(1, 1);
+
+}
+/* @media screen and (min-width:1000px) {
+.cover { background:url("img/header.jpg") ;
+background-size:cover;
+height: 250px;}
+} */
+/* .navbar-toggler {
+background: url("img/logo.png")
+no-repeat left center;
+background-size: contain;
+height: 50px;
+width: 100px;
+} */
+.checkmark {
+width: 20px;
+height: 20px;
+border-radius: 50%;
+/* display: block; */
+stroke-width: 2;
+stroke: blue;
+stroke-miterlimit: 10;
+stroke-dashoffset: 0;
+/* margin: 10% auto; */
+}
+
+
+/* .A_1 > .container{
+  max-width:100% !important;
+
+  margin-bottom:40px;
+}
+.A_2  > .container{
+  width: 100% !important;;
+  margin-bottom:40px;
+} */
+/* small */
+.B_1{
+  /* display: inline-block; */
+position: relative;
+/* padding-left:24px; */
+/* padding-right:24px; */
+  font-size: 40px;
+  font-weight: bold;
+  text-align: left;
+
+}
+.B_1:before {
+  content: '';
+  position: absolute;
+  left: 0%;
+  top: -15px; /*下線の上下位置調整*/
+  display: inline-block;
+  width: 50px; /*下線の幅*/
+  height: 2px; /*下線の太さ*/
+  background-color: #666666; /*下線の色*/
+}
+
+.C_1{
+  border:solid 1px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  box-shadow:0.5px 0.5px;
+  /* background-color: red; */
+
+}
+.D_1{
+  /* width:100%; */
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome; /*Font Awesomeのフォントファミリー*/
+    font-family:Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-quote-left:before {
+    content: "\f046";  /*アイコンの種類*/
+    color:#FDB32B;
+    font-size:20px;
+}
+
+.tokyo{
+  font-weight: bold;
+  height:35px;
+  margin-bottom:8px;
+}
+.marumaru_2{
+  height:35px;
+  margin-bottom:10px;
+  box-shadow: none !important;
+}
+.guest_2{
+  height:35px;
+  margin-bottom:10px;
+  box-shadow: none !important;
+}
+/* button.guest_2:hover{
+  border-color:red;
+
+} */
+
+.footer_1{
+  /* display: inline-block; */
+position: relative;
+/* padding-left:24px; */
+/* padding-right:24px; */
+  font-size: 10px;
+  font-weight: bold;
+  text-align: left;
+
+}
+.footer_1:before {
+  content: '';
+  position: absolute;
+  left: 0%;
+  top: -15px; /*下線の上下位置調整*/
+  display: inline-block;
+  width: 50px; /*下線の幅*/
+  height: 2px; /*下線の太さ*/
+  background-color: #666666; /*下線の色*/
+}
+
+/* medium */
+@media (min-width:768px){
+
+.img_resize{
+  width:600px;
+  height:400px;
+}
+.sample2{
+  width:600px;
+  height:400px;
+}
+.sample2 .mask {
+	width:			100%;
+	height:			100%;
+	position:		absolute;
+	top:			0;
+	left:			0;
+	opacity:		0;	/* マスクを表示しない */
+	background-color:	rgba(0,0,0,0.4);
+	-webkit-transition:	all 0.6s ease;
+	transition:		all 0.6s ease;
+}
+
+.sample2:hover .mask {
+	/* opacity:		1;	/* マスクを表示する */ */
+	padding-top:		240px;	/* ホバーで下にずらす */
+}
+  .cover{
+    height:500px;
+  }
+  .B_1{
+    position: relative;
+      text-align: center;
+  }
+  .B_1:before {
+    content: '';
+position: absolute;
+    left: 50%;
+    top: -15px; /*下線の上下位置調整*/
+    display: inline-block;
+    width: 50px; /*下線の幅*/
+    height: 2px; /*下線の太さ*/
+    transform: translate(-50%); /*位置調整*/
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    background-color: #666666; /*下線の色*/
+}
+.D_1{
+  width:700px;
+  object-fit: contain;
+  margin:auto;
+}
+.tokyo{
+  font-weight: normal;
+  height:50px;
+  margin-bottom:8px;
+}
+.marumaru_1{
+  padding-right:5px !important;
+}
+.marumaru_2{
+  height:50px;
+}
+.guest_1{
+  padding-left:5px !important;
+}
+.guest_2{
+  height:50px;
+}
+
+/* .A_1 > .container-fluid{
+  width:550px;
+
+  margin-bottom:40px;
+} */
+.green > .container-fluid{
+  width:650px;
+
+}
+.manichi > .container-fluid{
+  width:650px;
+
+}
+.red > .container-fluid{
+  width:650px;
+
+}
+.simple > .container-fluid{
+  width:550px;
+}
+.yume > .container-fluid{
+ text-align:center;
+ width: 550px
+}
+.tuite > .container-fluid{
+ width: 550px
+}
+.situmon > .container-fluid{
+ width: 550px
+}
+.shousai > .container-fluid{
+ width: 550px
+}
+/* .ma > container{
+  margin-left:50px;
+  margin-right:50px;
+
+} */
+}
+/* @media (min-width:910px){
+.ma{
+  margin-left:auto;
+  margin-right:auto;
+
+}
+} */
+/* large */
+@media (min-width:992px){
+  .cover{
+      height: 700px;
+  }
+
+  .header_1{
+    display:flex;
+    align-items: center;
+    width 100%;
+    height:81px;
+    padding:0px 36px;
+
+    /* justify-content: center; */
+  }
+  .header_1_2{
+    margin-left:auto;
+
+  }
+
+.B_1{
+  position: relative;
+    text-align: center;
+  font-size: 60px;
+}
+.C_1{
+  border:none;
+  box-shadow: none;
+}
+.D_1{
+  width:1000px;
+  object-fit: contain;
+  margin:auto;
+}
+.fa-quote-left:before {
+    font-size:40px;
+}
+/* .A_1 > .container-fluid{
+  width:900px;
+
+  margin-bottom:40px;
+} */
+.green > .container-fluid{
+  width:900px;
+
+}
+.manichi > .container-fluid{
+  width:900px;
+
+}
+.red > .container-fluid{
+  width:900px;
+
+}
+.simple > .container-fluid{
+  width:900px;
+}
+.yume > .container-fluid{
+  width: 850px
+}
+.tuite > .container-fluid{
+  width: 850px
+}
+.situmon> .container-fluid{
+  width: 900px
+}
+.shousai> .container-fluid{
+  width: 900px
+}
+  /* body{
+    background: skyblue;
+    font-weight: bold;
+  } */
+}

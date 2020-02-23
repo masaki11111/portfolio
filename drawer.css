@@ -1,0 +1,46 @@
+.ul_open_h{
+    background: gray;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    top: 0;
+
+}
+
+
+.ul_open_h{
+    height: 100%;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+    overflow-y: scroll;
+    position: fixed;
+}
+
+.ul_open_h li{
+    padding: 10px;
+    width: 150px;
+}
+
+.ul_open_v{
+    position: absolute;
+    height: 100%;
+}
+
+.ul_open_v li{
+    padding: 10px;
+    width: 150px;
+}
+.open-2{
+    left : -100%;
+}
+.open-2.active{
+    left : 0px;
+}
+
+.move-2.on.btn{
+    position: fixed;
+    left: 100px;
+    top: 10px;
+}
